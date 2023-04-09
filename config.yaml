@@ -1,0 +1,27 @@
+# 导出路径 默认当前路径下 k8s-export
+#exportPath: /home/app-dev/kubeymlex/output
+# 导出路径 默认当前路径下 k8s-export/pv
+#pvExportPath: /home/app-dev/kubeymlex/pv-bak
+# 备份模式
+# 1 单个资源逐个备份方式 2 按照类型备份方式
+exportModel: 1
+# 需要排除的命名空间（默认不排除）
+#excludedNamespaces:
+#  - kube-system
+#  - kube-public
+#  - kube-node-lease
+# 指定备份的命名空间（默认全部）
+#includedNamespaces:
+#  - bincloud
+#  - zhejiang
+#  - ningbo-dchy
+# 要备份的命名空间
+# pvc,pv,configmap,service,secret,deployment,statefulset,job,cronjob
+resources:
+  - deployment
+  - service
+  - pvc
+  - configmap
+  - secret
+  - statefulset
+  - cronjob

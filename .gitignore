@@ -1,0 +1,11 @@
+*.back
+*.xml
+*.iml
+/dist
+*.tar
+__debug_bin
+/.vscode
+*.idea
+*.idea/
+#build文件夹
+build
